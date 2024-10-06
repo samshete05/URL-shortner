@@ -9,3 +9,16 @@ About this Application-
  -Redirect original URLs from short url.
 - Track the number of clicks on each short link.
 - Store URLs in a Mongodb database.
+
+Example - 
+- Request -
+{
+    "longUrl": "https://www.example.com/some/long/url"
+
+}
+
+- Response -
+- {
+    "shortUrl": "http://localhost:3000/abc123",
+    "clicks": 0
+}
