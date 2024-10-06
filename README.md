@@ -13,12 +13,15 @@ About this Application-
 Example - 
 - Request -
 {
-    "longUrl": "https://www.example.com/some/long/url"
+    "url": "https://www.example.com/some/long/url"
 
 }
 
 - Response -
 - {
-    "shortUrl": "http://localhost:3000/abc123",
-    "clicks": 0
+    "shorturl": "http://localhost:3000/abc123",
+   clicksHistory:Array(),
+    "totalclicks": 0
+     
+  
 }
