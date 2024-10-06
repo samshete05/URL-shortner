@@ -26,4 +26,9 @@ This project implements a URL Shortener API that allows users to give their long
 {
     "url": "https://www.example.com/some/long/url"
 }
-
+### Response
+{
+    "shorturl": "http://localhost:3000/abc123",
+    "clicksHistory": [],
+    "totalclicks": 0
+}
