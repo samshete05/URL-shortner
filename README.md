@@ -4,7 +4,7 @@
 
 This project implements a URL Shortener API that allows users to give their long URL and receive a shorter URL. Each shortened URL can be accessed, and the API tracks how many times each short link is clicked.
 
-## Tech Stack
+## Technologies
 
 - **Node.js**: JavaScript runtime for server-side programming.
 - **Express.js**: Web application framework for Node.js.
@@ -27,8 +27,9 @@ This project implements a URL Shortener API that allows users to give their long
     "url": "https://www.example.com/some/long/url"
 }
 ### Response
+
 {
-    "shorturl": "http://localhost:3000/abc123",
+    "shorturl": "http://localhost:8000/abc123",
     "clicksHistory": [],
     "totalclicks": 0
 }
