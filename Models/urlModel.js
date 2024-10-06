@@ -12,6 +12,7 @@ const urlSchema = new mongoose.Schema({
     required:true
   },
   clicksHistory:[{timeStamp:{type:Number}}],
+  totalclicks: {type:Number,default:0}
 })
 
 const URL = mongoose.model("URL",urlSchema)

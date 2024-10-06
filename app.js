@@ -1,14 +1,15 @@
 const express = require("express")
-const {generateNewShortendUrl} = require("./Controllers/urlcontroller")
+const {generateNewShortendUrl,createshortenerurl} = require("./Controllers/urlcontroller")
 const connectDB = require("./connection/database")
-// const mongoose = require("mongoose")
+
 
 const app = express()
 const port = 8000
 
 app.use(express.json())
 
-app.post("/url",generateNewShortendUrl)
+app.post("/url",generateNewShortendUrl) //shorturl lene ke liye
+app.get("/:shortId",createshortenerurl)  //redirect karne ke liye that is puri link create karne ke liye
 
 
 app.listen(port,()=>{

@@ -13,5 +13,5 @@ const connectDB = async () => {
     }
 };
 
-connectDB(); // Connect to the database immediately
+connectDB(); 
 module.exports = connectDB;
